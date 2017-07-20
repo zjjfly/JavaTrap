@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 
 public class Traps2 {
-	//@Test
+	@Test
 	// 陷阱1 字符相加输出
 	public void LastLaugh() {
 		System.out.println('h' + 'a');
@@ -16,7 +16,7 @@ public class Traps2 {
 		System.out.println("2+2="+2+2);
 	}
 
-	//@Test
+	@Test
 	// 陷阱2 char数组没有实现toString方法
 	public void ABC() {
 		String s = "This is ";
@@ -25,21 +25,21 @@ public class Traps2 {
 		System.out.println(s + String.valueOf(cs));
 	}
 
-	//@Test
+	@Test
 	// 陷阱3 +好无论做运算符还是字符串连接符都比==的优先级高
 	public void AnimalFarm() {
 		String s = "my dog7";
 		String p = "my dog" + s.length();
 		System.out.println("This is " + s == p);
 	}
-	//@Test
+	@Test
 	//陷阱4 unicode转义字符会在编译时转换成它所表示的字符
 	public void EscapeRout(){
 		System.out.println("a\u0022.length()+\u0022b".length());
 		//\u0022其实是一个双引号。
 	}
 
-	//@Test
+	@Test
 	//陷阱5 还是unicode转义符产生的问题
 	public void LinePrinter(){
 		//下面的这行注释如果没有第二个"//"会出问题
@@ -48,7 +48,7 @@ public class Traps2 {
 		System.out.println(c);
 		System.out.println("line");
 	}
-	//@Test
+	@Test
 	//陷阱6 把byte数组转成string时，都在使用一个字符集，不管是否显示的指定
 	public void StringCheese() throws UnsupportedEncodingException {
 		byte bytes[]=new byte[256];
