@@ -1,4 +1,4 @@
-package chp01;
+package com.github.zjjfly.chp01;
 
 import org.junit.Test;
 
@@ -73,7 +73,7 @@ public class Traps1 {
 		System.out.println(true ? x : 0);
 		System.out.println(false ? i : x);
 	}
-	
+
 	@Test
 	// 陷阱9 不要将复合赋值表达式作用于byte，short，char类型的变量，当结果类型宽于变量的类型是，会产生一个窄化转型
 	public void Half() {

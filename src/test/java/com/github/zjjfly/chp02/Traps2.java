@@ -1,4 +1,4 @@
-package chp02;
+package com.github.zjjfly.chp02;
 
 import org.junit.Test;
 
